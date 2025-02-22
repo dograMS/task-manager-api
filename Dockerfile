@@ -5,6 +5,6 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:17-jdk-slim
 WORKDIR /app
-COPY --from=build /target/todo*.jar app.jar
+COPY --from=build /app/target/todo*.jar app.jar
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar"]
