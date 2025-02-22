@@ -1,0 +1,8 @@
+server:
+  port: 8443
+  ssl:
+    key-store: classpath:mykeys.jks
+    key-store-password: mani@321
+    key-password: mani@321
+
+
